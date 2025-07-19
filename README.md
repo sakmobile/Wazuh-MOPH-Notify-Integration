@@ -155,11 +155,11 @@ Level 0+   → INFO (📋🔵)     → ข้อมูลสำหรับก�
 
 ### ทดสอบ Integration
 ```bash
-# สร้าง test event
-sudo logger -p auth.info "Failed password for testuser from 192.168.1.200 port 22 ssh2"
+# ทดสอบ syntax
+sudo /var/ossec/framework/python/bin/python3 -m py_compile /var/ossec/integrations/custom-moph-notify.py
 
-# ตรวจสอบ log
-sudo tail -f /var/ossec/logs/ossec.log | grep "moph"
+# ทดสอบการทำงาน
+sudo /var/ossec/integrations/custom-moph-notify /tmp/test_alert.json dummy https://morpromt2f.moph.go.th/api/notify/send
 ```
 
 

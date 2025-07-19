@@ -5,7 +5,7 @@ LINE OA หมอพร้อม Integration สำหรับ Wazuh Security A
 
 Author: Werachai Oonmanee
 License: MIT
-Repository: https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration
+Repository: https://github.com/yourusername/wazuh-moph-notify
 """
 
 import sys
@@ -60,7 +60,7 @@ Priority Levels:
   Level 0+   → INFO (📋🔵)     → ข้อมูลสำหรับการวิเคราะห์
 
 Version: {VERSION}
-Repository: https://github.com/yourusername/wazuh-moph-notify
+Repository: https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration.git
 """)
 
 def get_max_length_by_priority(priority):
@@ -248,7 +248,6 @@ def create_flex_message(alert_data, severity_info):
         "altText": f"🚨 Wazuh Alert: {alert_data['description'][:50]}...",
         "contents": {
             "type": "bubble",
-            "size": "kilo",
             "header": {
                 "type": "box",
                 "layout": "vertical",
