@@ -49,7 +49,7 @@ Dec 18 10:30:00 web-server-01 sshd[1234]: Failed password for admin...
 ### 1. ดาวน์โหลดไฟล์
 ```bash
 # ดาวน์โหลด repository
-git clone https://github.com/yourusername/wazuh-moph-notify.git
+git clone https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration.git
 cd wazuh-moph-notify
 
 # คัดลอกไฟล์ไปยัง Wazuh

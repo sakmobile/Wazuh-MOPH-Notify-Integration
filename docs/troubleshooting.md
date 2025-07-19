@@ -501,8 +501,8 @@ MOPH_BASE_URL = "https://new-api-url.moph.go.th"
    - อธิบายขั้นตอนที่ทำมา
 
 3. **ติดต่อทีมสนับสนุน**:
-   - Email: support@yourorganization.com
-   - GitHub: https://github.com/yourusername/wazuh-moph-notify/issues
+   - Email: sak.janenii@gmail.com
+   - GitHub: https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration/issues
 
 ---
 

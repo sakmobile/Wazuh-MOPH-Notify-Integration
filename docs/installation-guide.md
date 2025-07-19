@@ -83,7 +83,7 @@ sudo cp -r /var/ossec/integrations /var/ossec/backup/$(date +%Y%m%d_%H%M%S)/inte
 ```bash
 # Clone repository
 cd /tmp
-git clone https://github.com/yourusername/wazuh-moph-notify.git
+git clone https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration.git
 cd wazuh-moph-notify
 
 # คัดลอกไฟล์ไปยัง Wazuh directory
@@ -97,10 +97,10 @@ sudo cp scripts/custom-moph-notify.py /var/ossec/integrations/
 cd /var/ossec/integrations/
 
 # ดาวน์โหลด shell script
-sudo wget https://raw.githubusercontent.com/yourusername/wazuh-moph-notify/main/scripts/custom-moph-notify
+sudo wget https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration/blob/5469b45f4b4cca30be9fcb44aa7dfc674277ae35/scripts/custom-moph-notify
 
 # ดาวน์โหลด Python script  
-sudo wget https://raw.githubusercontent.com/yourusername/wazuh-moph-notify/main/scripts/custom-moph-notify.py
+sudo wget https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration/blob/5469b45f4b4cca30be9fcb44aa7dfc674277ae35/scripts/custom-moph-notify.py
 ```
 
 ### ขั้นตอนที่ 2: ตั้งค่า File Permissions
@@ -524,7 +524,7 @@ sudo cp /var/ossec/integrations/custom-moph-notify.py /var/ossec/integrations/cu
 
 # 2. ดาวน์โหลด version ใหม่
 cd /tmp
-git clone https://github.com/yourusername/wazuh-moph-notify.git
+git clone https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration.git
 cd wazuh-moph-notify
 
 # 3. คัดลอกไฟล์ใหม่
@@ -570,8 +570,8 @@ sudo /var/ossec/bin/wazuh-control restart
    - รวม system information
 
 5. **ติดต่อทีมสนับสนุน**:
-   - Email: support@yourorganization.com
-   - GitHub Issues: https://github.com/yourusername/wazuh-moph-notify/issues
+   - Email: sak.janenii@gmail.com
+   - GitHub Issues: https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration/issues
 
 ---
 

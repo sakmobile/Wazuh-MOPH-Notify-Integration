@@ -3,9 +3,9 @@
 Wazuh MOPH Notify Integration v2.0
 LINE OA หมอพร้อม Integration สำหรับ Wazuh Security Alerts
 
-Author: Your Organization
+Author: Werachai Oonmanee
 License: MIT
-Repository: https://github.com/yourusername/wazuh-moph-notify
+Repository: https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration
 """
 
 import sys
