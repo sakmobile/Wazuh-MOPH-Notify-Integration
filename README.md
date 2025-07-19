@@ -40,9 +40,8 @@ Dec 18 10:30:00 web-server-01 sshd[1234]: Failed password for admin...
 🚀 ดำเนินการด่วนภายใน 15 นาทีี
 
 ```
-![Alert Example](https://raw.githubusercontent.com/sakmobile/Wazuh-MOPH-Notify-Integration/refs/heads/main/images/1.png)
-![Alert Example](https://raw.githubusercontent.com/sakmobile/Wazuh-MOPH-Notify-Integration/refs/heads/main/images/2.png)
-
+<img src="![UR](https://raw.githubusercontent.com/sakmobile/Wazuh-MOPH-Notify-Integration/refs/heads/main/images/1.png)" style="width:400px;"/>
+<img src="![UR](https://raw.githubusercontent.com/sakmobile/Wazuh-MOPH-Notify-Integration/refs/heads/main/images/2.png)" style="width:400px;"/>
 ## 🚀 การติดตั้งด่วน
 
 ### 1. ดาวน์โหลดไฟล์
