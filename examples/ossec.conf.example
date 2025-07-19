@@ -1,0 +1,73 @@
+<!-- 
+Wazuh MOPH Notify Integration Configuration Examples
+เพิ่มส่วนใดส่วนหนึ่งเหล่านี้ใน <global> section ของ ossec.conf
+-->
+
+<!-- ตัวอย่างที่ 1: การกำหนดค่าพื้นฐาน -->
+<integration>
+    <name>custom-moph-notify</name>
+    <level>7</level>
+    <hook_url>https://morpromt2f.moph.go.th/api/notify/send</hook_url>
+    <alert_format>json</alert_format>
+    <options>max_log=1</options>
+</integration>
+
+<!-- ตัวอย่างที่ 2: เฉพาะ Alert สำคัญ (Production) -->
+<integration>
+    <name>custom-moph-notify</name>
+    <level>10</level>
+    <group>authentication_failed,rootcheck,web_attack,malware</group>
+    <hook_url>https://morpromt2f.moph.go.th/api/notify/send</hook_url>
+    <alert_format>json</alert_format>
+    <options>max_log=1</options>
+</integration>
+
+<!-- ตัวอย่างที่ 3: การกรองตามเวลา -->
+<integration>
+    <name>custom-moph-notify</name>
+    <level>7</level>
+    <time>8:00-18:00</time>
+    <hook_url>https://morpromt2f.moph.go.th/api/notify/send</hook_url>
+    <alert_format>json</alert_format>
+    <options>max_log=1</options>
+</integration>
+
+<!-- ตัวอย่างที่ 4: การแยกระดับความสำคัญ -->
+<!-- Alert ระดับสูง - ส่งทันที -->
+<integration>
+    <name>custom-moph-notify</name>
+    <level>12</level>
+    <hook_url>https://morpromt2f.moph.go.th/api/notify/send</hook_url>
+    <alert_format>json</alert_format>
+    <options>max_log=1</options>
+</integration>
+
+<!-- Alert ระดับกลาง - ส่งในเวลาทำการ -->
+<integration>
+    <name>custom-moph-notify</name>
+    <level>7</level>
+    <time>8:00-18:00</time>
+    <hook_url>https://morpromt2f.moph.go.th/api/notify/send</hook_url>
+    <alert_format>json</alert_format>
+    <options>max_log=1</options>
+</integration>
+
+<!-- ตัวอย่างที่ 5: การกรองตาม Agent -->
+<integration>
+    <name>custom-moph-notify</name>
+    <level>5</level>
+    <agent_id>001,002,003</agent_id>
+    <hook_url>https://morpromt2f.moph.go.th/api/notify/send</hook_url>
+    <alert_format>json</alert_format>
+    <options>max_log=1</options>
+</integration>
+
+<!-- ตัวอย่างที่ 6: การยกเว้น Rule ID บางตัว -->
+<integration>
+    <name>custom-moph-notify</name>
+    <level>5</level>
+    <rule_id>!5502,!5503</rule_id>
+    <hook_url>https://morpromt2f.moph.go.th/api/notify/send</hook_url>
+    <alert_format>json</alert_format>
+    <options>max_log=1</options>
+</integration>

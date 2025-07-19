@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-18T10:30:00.000+0000",
+  "rule": {
+    "level": 12,
+    "description": "Multiple authentication failures from same source IP",
+    "id": "5712",
+    "groups": ["authentication_failed", "invalid_login"]
+  },
+  "agent": {
+    "name": "web-server-01",
+    "id": "001"
+  },
+  "data": {
+    "srcip": "192.168.1.1",
+    "message": "Failed login attempt from user 'admin' - IP: 192.168.1.1"
+  },
+  "full_log": "Dec 18 10:30:00 web-server-01 sshd[1234]: Failed password for admin from 192.168.1.1 port 22 ssh2. This is the 5th consecutive failed attempt from this IP address within 10 minutes. Connection will be blocked temporarily.",
+  "location": "/var/log/auth.log"
+}
