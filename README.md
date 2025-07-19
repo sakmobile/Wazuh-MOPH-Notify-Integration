@@ -38,6 +38,9 @@ Dec 18 10:30:00 web-server-01 sshd[1234]: Failed password for admin...
 ⏰ 2025-07-18T10:30:00.000+0000
 
 🚀 ดำเนินการด่วนภายใน 15 นาทีี
+
+![Alert Example](./images/1.png)
+![Alert Example](./images/2.png)
 ```
 
 ## 🚀 การติดตั้งด่วน
@@ -53,8 +56,8 @@ sudo cp scripts/custom-moph-notify /var/ossec/integrations/
 sudo cp scripts/custom-moph-notify.py /var/ossec/integrations/
 
 # ตั้งค่า permission
-sudo chmod 750 /var/ossec/integrations/custom-moph-notify*
-sudo chown root:wazuh /var/ossec/integrations/custom-moph-notify*
+sudo chmod 750 /var/ossec/integrations/custom-moph-notify
+sudo chown root:wazuh /var/ossec/integrations/custom-moph-notify
 sudo chmod 750 /var/ossec/integrations/custom-moph-notify.py
 sudo chown root:wazuh /var/ossec/integrations/custom-moph-notify.py
 ```
@@ -202,8 +205,8 @@ grep -E "CLIENT_KEY|SECRET_KEY" /var/ossec/integrations/custom-moph-notify.py
 **Permission Denied**
 ```bash
 # แก้ไข permissions
-sudo chmod 750 /var/ossec/integrations/custom-moph-notify*
-sudo chown root:wazuh /var/ossec/integrations/custom-moph-notify*
+sudo chmod 750 /var/ossec/integrations/custom-moph-notify
+sudo chown root:wazuh /var/ossec/integrations/custom-moph-notify
 sudo chmod 750 /var/ossec/integrations/custom-moph-notify.py
 sudo chown root:wazuh /var/ossec/integrations/custom-moph-notify.py
 ```
@@ -226,10 +229,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: support@yourorganization.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/wazuh-moph-notify/issues)
-- 📚 Documentation: [Wiki](https://github.com/yourusername/wazuh-moph-notify/wiki)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/wazuh-moph-notify/discussions)
+- 📧 Email: sak.janenii@gmail.com
+- 🐛 Issues: [GitHub Issues](https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration/issues)
+- 📚 Documentation: [Wiki](https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration/wiki)
+- 💬 Discussions: [GitHub Discussions](https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration/discussions)
+- 📘 Facebook: [Sisaket Healthcare IT](https://www.facebook.com/werachai.oonmanee)  
 
 ## 🔄 Changelog
 
@@ -251,6 +255,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ ถ้าโปรเจคนี้มีประโยชน์ กรุณา Star ให้ด้วยนะครับ! ⭐**
 
-Made with ❤️ for Thai Healthcare IT Community
+Developed with ❤️ for the Thai Healthcare IT Community by an IT person from
 
 </div>
