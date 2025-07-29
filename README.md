@@ -48,6 +48,9 @@ Dec 18 10:30:00 web-server-01 sshd[1234]: Failed password for admin...
 
 ### 1. ดาวน์โหลดไฟล์
 ```bash
+# ตรวจสอบ version python3
+sudo /var/ossec/framework/python/bin/python3 --version
+
 # ดาวน์โหลด repository
 git clone https://github.com/sakmobile/Wazuh-MOPH-Notify-Integration.git
 cd wazuh-moph-notify
